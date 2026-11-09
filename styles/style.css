@@ -22,5 +22,10 @@ html{
     font-family: 'poppins', sans-serif;
 }
 
+body{
+    background-color: var(--bg-color);
+    height: 100%;
+}
+
 
 
