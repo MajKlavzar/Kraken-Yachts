@@ -9,6 +9,8 @@
     --text-color: #333333;
 
     --base-radius: 2rem;
+    --header-radius: 86px;
+    font-size: 11pt;
 }
 
 *{
@@ -25,7 +27,164 @@ html{
 body{
     background-color: var(--bg-color);
     height: 100%;
+    width: min(100vw,100dvw);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
 }
 
+nav{
+    position:sticky;
+    top: 0px;
+    width: 66rem;
+    background-color: var(--brand-color);
+    border-radius: 0 0 var(--base-radius) var(--base-radius);
+    display: flex;
+    background-color: var(--bg-color);
+    padding:10px;
+    padding:30px;
+}
 
+nav ul:first-child{
+    justify-self: center;
+}
 
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex: 1 1 0;
+}
+
+nav ul li{
+    flex: 1 1 0;
+}
+
+#png-logo{
+    scale: 2;
+}
+
+#toggle-sidebar {
+    border: 0;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+#toggle-sidebar svg {
+    display: block;
+    width: 28px;
+    height: 28px;
+}
+
+h1{
+    color: var(--headings-color);
+    font-size: 5.5rem;
+    line-height: 6rem;
+    letter-spacing: -2px;
+}
+
+h2{
+    color: var(--headings-color);
+    font-size: 2.6rem;
+    line-height: 3rem;
+    font-weight: 700;
+}
+
+h3{
+    color: var(--headings-color);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+p, span{
+    color: var(--text-color);
+    text-align: start;
+}
+
+a{
+    color: var(--headings-color);
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:8rem;
+
+}
+
+section{
+    border-radius: var(--base-radius);
+    width: 1104px;
+}
+
+#hero{
+    width: 1350px;
+    height: 700px;
+    background-color: var(--wrapper-color);
+    border-radius: var(--header-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero > div, img{
+    width: 50%;
+}
+
+#hero > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+#buttons-container{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    align-self: flex-start;
+}
+
+.enquire{
+    padding: 0.5rem 1rem;
+    background-color: var(--cta-color);
+    color: var(--brand-color);
+    border-radius: var(--base-radius);
+    color: var(--brand-color);
+    font-weight: 700;
+    transition: 200ms ease;
+}
+
+.enquire:hover{
+    background-color: var(--brand-color);
+    color: var(--bg-color);
+}
+
+#hero-container{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#about-container{
+    display: flex;
+    align-items: space-evenly;
+}
+
+.about-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:1rem;
+    gap:1rem;
+    
+}
