@@ -10,7 +10,8 @@
     --headings-color: #000000;
     --text-color: #333333;
 
-    --base-radius: 2rem;
+    --default-radius: 2rem;
+    --important-radius: 3rem;
 
     --testing-color:red;
 }
@@ -22,6 +23,7 @@
 html{
     text-align: center;
     font-family: 'poppins', sans-serif;
+    height: 100%;
 }
 body{
     background-color: var(--bg-color);
@@ -29,6 +31,79 @@ body{
     width: min(100vw,100dvw);
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     gap: 5rem;
+}
+h1{
+    color:var(--headings-color);
+    font-size: 4.854rem;
+    font-weight: 900;
+}
+h2{
+    color:var(--headings-color);
+    font-size: 3.236rem;
+    font-weight: 800;
+}
+h3{
+    color:var(--headings-color);
+    font-size: 1.618rem;
+    font-weight: 800;
+}
+p{
+    color: var(--text-color);
+    text-align: left;
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
+button{
+    border: none;
+    background-color: none;
+}
+/*NAVIGATION*/
+nav{
+    background-color: var(--bg-color);
+    border-radius: 0 0 var(--important-radius) var(--important-radius);
+    width: min(90%, 78.125rem);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+nav ul{
+    list-style: none;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav ul li{
+    flex:1 1 0;
+}
+nav img{
+    height: 80%;
+    width: 80%;
+}
+nav button{
+    width: 28px;
+    height: 28px;
+    background-color: inherit;
+    cursor:pointer;
+}
+/*COMMON CLASSES*/
+.cta-button{
+    background-color: var(--cta-color);
+    padding: 0.5rem 1.25rem;
+    border-radius: var(--default-radius);
+    color: var(--brand-color);
+    transition: 200ms ease;
+}
+.cta-button:hover{
+    background-color: var(--brand-color);
+    color: var(--cta-color);
+    border-radius: var(--default-radius);
 }
