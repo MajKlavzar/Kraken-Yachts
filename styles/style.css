@@ -6,6 +6,7 @@
     --brand-color: #152532;
     --cta-color: #fad63d;
     --bg-color: #ffffff;
+    --bg-color-glass: #ffffff46;
     --wrapper-color: #f7f7f7;
     --headings-color: #000000;
     --text-color: #333333;
@@ -119,7 +120,7 @@ nav button{
 
 /*MAIN*/
 main{
-    background-color: var(--testing-color);
+    background-color: var(--bg-color);
     border-radius: var(--important-radius);
     width: min(90%, 90rem);
     display: flex;
@@ -180,21 +181,35 @@ main{
 #explore-kraken:hover img{
     width: 80px;
 }
-#hero-logl-container{
+#hero-logo-container{
     height: 100%;
 }
 #hero-video{
-
     border-radius: 0 var(--important-radius) var(--important-radius) 0;
 }
 #hero-logo-wrapper {
     height: 100%;
+    flex: 1 1 0;
     overflow: hidden;
 }
 #hero-video {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
-
+#hero-logo-container{
+    width: 300px;
+    height: 400px;
+    background-color: var(--bg-color-glass);
+    border-radius: var(--important-radius);
+    backdrop-filter: blur(2px);
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+#hero-logo-wrapper{
+    display:grid;
+    place-items: center;
+}
 
