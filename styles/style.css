@@ -6,7 +6,7 @@
     --brand-color: #152532;
     --cta-color: #fad63d;
     --bg-color: #ffffff;
-    --bg-color-glass: #ffffff46;
+    --bg-color-glass: #ffffff7a;
     --wrapper-color: #f7f7f7;
     --headings-color: #000000;
     --text-color: #333333;
@@ -206,7 +206,7 @@ main{
     height: 400px;
     background-color: var(--bg-color-glass);
     border-radius: var(--important-radius);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     display:flex;
