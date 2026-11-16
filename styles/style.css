@@ -229,3 +229,29 @@ main{
     flex-direction: column;
     gap: 2rem;
 }
+
+#socials-section{
+    width: min(70rem, 80%);
+    height: 500px;
+    background-color: var(--bg-color);
+    border-radius: var(--important-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#new-videos-container{
+    background-color: var(--testing-color);
+    width: 90%;
+    height: 400px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+#video-card{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--wrapper-color);
+    flex: 1 1 0;
+}
