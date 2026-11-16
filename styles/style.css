@@ -236,12 +236,11 @@ main{
     background-color: var(--bg-color);
     border-radius: var(--important-radius);
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 #new-videos-container{
     background-color: var(--bg-color);
-    width: 90%;
+    width: 100%;
     height: 400px;
     display:flex;
     align-items: flex-start;
