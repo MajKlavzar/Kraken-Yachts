@@ -1,1 +1,1 @@
-# rename-later
+# Kraken yachts website remake
